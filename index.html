@@ -3,23 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="fav.jpg" type="image/x-icon">
-    <title>Saturn's Cooking Contest Form</title>
+    <title>Saturn Cooking Contest 2025</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
 </head>
-<body>    <!-- Responsive image -->
-    <img src="img.jpg" alt="Contest" class="responsive-image">
+<body>
+<div class="total">
+    <div class="img">
+        <!-- Responsive image -->
+        <img src="img.jpg" alt="Contest" class="responsive-image">
+    </div>
+        <div class="container">
+        <h1>Saturn's Indian Cooking Contest 2025</h1>
+        <h2>Registration Form</h2>
+        <form name="cooking-contest" method="POST" data-netlify="true" enctype="multipart/form-data" netlify>
+            <input type="hidden" name="form-name" value="cooking-contest">
+            
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
 
-    <!-- Button to open form -->
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCuoR9WinO_RyMPrZDDjgl2iOzsKb6CrCIgD25qV6t5c5fNg/viewform?usp=header" 
-       target="_blank" 
-       rel="noopener noreferrer">
-        <button class="button-56" role="button">
-            Open Form in Chrome
-        </button>
-    </a>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
 
-    <!-- Footer note -->
-    <p class="note">Click the button to open the form in a new tab. Make sure you are logged into your Google account.</p>
+            <label for="contact">Contact Number *</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="gender">Gender *</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+
+            <label for="age">Age *</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="category">Category *</label>
+            <select id="category" name="category" required>
+                <option value="Junior Chefs (3-10 years)">Junior Chefs (3-10 years)</option>
+                <option value="Senior Kids (11-16 years)">Senior Kids (11-16 years)</option>
+                <option value="Youth (17-30 years)">Youth (17-30 years)</option>
+                <option value="Masters (30+ years)">Masters (30+ years)</option>
+            </select>
+
+            <label for="reference">How did you hear about this competition? *</label>
+            <select id="reference" name="reference" required>
+                <option value="My Saturn Group Insta page">My Saturn Group Insta page</option>
+                <option value="Saturn's Advertise">Saturn's Advertise</option>
+                <option value="be_beautiful_with_pranshi">be_beautiful_with_pranshi</option>
+                <option value="madhus_bhannat_recipes">madhus_bhannat_recipes</option>
+                <option value="Zayke Ki Khushbu (Ritu Saxena)">Zayke Ki Khushbu (Ritu Saxena)</option>
+            </select>
+
+            <label for="payment">Scan & Pay ₹99 OR pay to the UPI ID : digvijay49@ybl*</label>
+            <img src="pay.jpeg" alt="Scan & Pay ₹99" class="pay">
+            <label for="payment">Upload Payment Screenshot *</label>
+            <input type="file" id="payment" name="payment" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p class="note">After submitting, we will verify your details and send a confirmation email.</p>
+
+        <div class="whatsapp-link">
+            <p>If you face issues uploading the screenshot, send it via WhatsApp:</p>
+            <a href="https://wa.me/7057450909" target="_blank">Click Here to WhatsApp Us</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>

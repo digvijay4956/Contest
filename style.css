@@ -1,13 +1,78 @@
+.container {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 4%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #4CAF50;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.note {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.whatsapp-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.whatsapp-link a {
+  color: #25D366;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 /* General styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #f9f9f9;    
+}
+.total{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Logo styles */
@@ -17,9 +82,9 @@ body {
 }
 
 /* Responsive image styles */
-.responsive-image {
-    width: 90%;
-    max-width: 320px;
+.responsive-image, .pay{
+    width: 50%;
+    /* max-width: 320px !important; */
     height: auto;
     margin: 20px 0;
     border-radius: 10px;
