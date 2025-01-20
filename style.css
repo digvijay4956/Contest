@@ -24,7 +24,6 @@ label {
 }
 
 input, select, textarea, button {
-  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -69,96 +68,89 @@ body {
     padding: 0;
     background-color: #f9f9f9;    
 }
-.total{
+
+.total {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 
-/* Logo styles */
-.logo {
-    margin: 20px auto;
-    max-width: 150px;
+.responsive-image, .pay {
+  width: 50%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive image styles */
-.responsive-image, .pay{
-    width: 50%;
-    /* max-width: 320px !important; */
-    height: auto;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Added styles for Contest Information */
+.container p, .container ul, .container ol {
+  text-align: left;
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container h2, .container h3 {
+  color: #333;
+}
+
+.container ul, .container ol {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.container ul li, .container ol li {
+  margin-bottom: 8px;
+}
+
+.container h2 {
+  font-size: 1.8em;
+  margin-top: 30px;
+  color: #4CAF50;
+}
+
+.container h3 {
+  font-size: 1.6em;
+  margin-top: 20px;
+}
+
+.container p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.5;
 }
 
 /* Button styles */
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 .button-56 {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    text-decoration: none; /* Removes underline */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
 /* Footer note */
 .note {
-    font-size: 14px;
-    color: #555;
-    margin-top: 20px;
-    margin-bottom: 50px;
+  font-size: 14px;
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
-/* CSS */
-.button-56 {
-  align-items: center;
-  background-color: #fee6e3;
-  border: 2px solid #111;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #111;
-  cursor: pointer;
-  display: flex;
-  font-family: Inter,sans-serif;
-  font-size: 16px;
-  height: 48px;
-  justify-content: center;
-  line-height: 24px;
-  max-width: 100%;
-  padding: 0 25px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-56:after {
-  background-color: #111;
-  border-radius: 8px;
-  content: "";
-  display: block;
-  height: 48px;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  top: -2px;
-  transform: translate(8px, 8px);
-  transition: transform .2s ease-out;
-  z-index: -1;
-}
-
-.button-56:hover:after {
-  transform: translate(0, 0);
+/* Button hover effect */
+.button-56:hover {
+  background-color: #45a049;
 }
 
 .button-56:active {
@@ -166,12 +158,53 @@ a{
   outline: 0;
 }
 
-.button-56:hover {
-  outline: 0;
-}
-
+/* Mobile view styles */
 @media (min-width: 768px) {
   .button-56 {
     padding: 0 40px;
+  }
+}
+
+/* Contest Information Styles */
+.container .info {
+  margin-top: 30px;
+}
+
+.container .info ul li {
+  padding-left: 10px;
+}
+
+.container h2, .container h3 {
+  color: #333;
+}
+
+.container .note, .container .whatsapp-link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container .whatsapp-link a {
+  color: #25D366;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.container .whatsapp-link {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .responsive-image, .pay {
+    width: 80%;
+  }
+
+  .container {
+    padding: 10%;
+  }
+
+  .note, .whatsapp-link {
+    font-size: 14px;
   }
 }
