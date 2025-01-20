@@ -89,8 +89,11 @@
         <h2>Registration Form</h2>
 
         <!-- The Form Starts Here -->
-        <form name="cooking-contest" method="POST" data-netlify="true" enctype="multipart/form-data" netlify>
+        <form name="cooking-contest" method="POST" data-netlify="true" enctype="multipart/form-data" netlify action="/thank-you">
             <input type="hidden" name="form-name" value="cooking-contest">
+            <p style="display:none;">
+                <label for="bot-field">Don’t fill this out if you’re human: <input name="bot-field"></label>
+            </p>            
             
             <label for="name">Full Name *</label>
             <input type="text" id="name" name="name" required>
